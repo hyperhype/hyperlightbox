@@ -1,0 +1,6 @@
+# hyperlightbox
+
+
+## License
+
+MIT
