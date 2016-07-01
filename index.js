@@ -12,12 +12,11 @@ function px(p) { return p+'px' }
 
 module.exports = function () {
   var lightbox = h('div.lightbox', {style: {
-    background: 'white', border: '1px solid black',
     position: 'fixed',
-    top: px(20), bottom: px(20),
-    left: px(20), right: px(20),
+    top: px(0), bottom: px(0),
+    left: px(0), right: px(0),
     display: 'none',
-    padding: px(10)
+//    padding: px(10)
   }})
 
   lightbox.close = function () {
@@ -37,4 +36,5 @@ module.exports = function () {
 
   return lightbox
 }
+
 
