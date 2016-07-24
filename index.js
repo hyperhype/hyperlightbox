@@ -17,13 +17,12 @@ module.exports = function () {
     top: px(0), bottom: px(0),
     left: px(0), right: px(0),
     display: 'none',
-//    padding: px(10)
   }}, content)
 
 
   lightbox.close = function () {
     lightbox.style.display = 'none'
-    lightbox.innerHTML = ''
+    content.innerHTML = ''
   }
 
   lightbox.center = function () {
@@ -38,6 +37,7 @@ module.exports = function () {
 
   return lightbox
 }
+
 
 
 
