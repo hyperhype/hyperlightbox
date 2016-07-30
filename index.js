@@ -16,7 +16,7 @@ module.exports = function () {
     position: 'fixed',
     top: px(0), bottom: px(0),
     left: px(0), right: px(0),
-    overflow: 'auto'
+    overflow: 'auto',
     display: 'none',
   }}, content)
 
