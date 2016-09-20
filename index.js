@@ -13,10 +13,6 @@ function px(p) { return p+'px' }
 module.exports = function () {
   var content = h('div.lightbox__content')
   var lightbox = h('div.lightbox', {style: {
-    position: 'fixed',
-    top: px(0), bottom: px(0),
-    left: px(0), right: px(0),
-    overflow: 'auto',
     display: 'none',
   }}, content)
 
@@ -26,18 +22,19 @@ module.exports = function () {
     content.innerHTML = ''
   }
 
-  lightbox.center = function () {
-    lightbox.style.left = px((width(window) - width(lightbox)) / 2)
-  }
-
   lightbox.show = function (el) {
+    content.innerHTML = ''
     content.appendChild(el)
     lightbox.style.display = 'block'
-    lightbox.center()
   }
 
   return lightbox
 }
+
+
+
+
+
 
 
 
