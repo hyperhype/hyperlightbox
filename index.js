@@ -14,8 +14,7 @@ module.exports = function () {
   var content = h('div.lightbox__content')
   var lightbox = h('div.lightbox', {style: {
     position: 'fixed',
-    top: px(0), bottom: px(0),
-    left: px(0), right: px(0),
+    top: px(0), left: px(0), right: px(0),
     overflow: 'auto',
     display: 'none',
   }}, content)
